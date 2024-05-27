@@ -1,1 +1,16 @@
-<p>landing works!</p>
+<!-- Toolbar -->
+<mat-toolbar color='primary'>
+    <span style="padding-right: 5px">
+        <mat-icon>calculate</mat-icon>
+    </span>
+    {{calculatorType}}
+    <span style="flex: 1 1 auto"></span>
+    <button mat-icon-button>
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div style="padding-top: 5px; width: 80%; margin: auto">
+    <!-- Loan Amortization Component -->
+    <app-loan-amortization *ngIf="calculatorType === Calculator.LoanAmortization"></app-loan-amortization>
+</div>
