@@ -4,7 +4,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { LoanAmortizationComponent } from 'src/app/components/loan-amortization/loan-amortization.component';
 import { CommonModule } from '@angular/common';
-import { MatSidenavModule } from '@angular/material/sidenav';
 
 export enum Calculator {
   LoanAmortization = 'Loan Amortization Calculator'
