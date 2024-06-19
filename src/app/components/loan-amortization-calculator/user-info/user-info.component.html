@@ -1,0 +1,93 @@
+
+<mat-card style="width: fit-content">
+    <mat-card-header>
+      <mat-card-title>Loan Information</mat-card-title>
+      <mat-card-subtitle>*NO INFORMATION IS SAVED*</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div style="padding-top: 20px">
+        <form [formGroup]="form">
+          <div>
+            <mat-form-field>
+              <mat-label>Annual Percent Rate</mat-label>
+              <input matInput type="number" formControlName="apy" />
+              @if (form.controls['apy'].value) {
+                <button
+                  matSuffix
+                  mat-icon-button
+                  (click)="form.controls['apy'].setValue('')">
+                  <mat-icon>close</mat-icon>
+                </button>
+              }
+            </mat-form-field>
+          </div>
+  
+          <div>
+            <mat-form-field>
+              <mat-label>Loan Term</mat-label>
+              <input matInput type="number" formControlName="loanTerm" />
+              @if (form.controls['loanTerm'].value) {
+                <button
+                  matSuffix
+                  mat-icon-button
+                  (click)="form.controls['loanTerm'].setValue('')">
+                  <mat-icon>close</mat-icon>
+                </button>
+              }
+            </mat-form-field>
+          </div>
+  
+          <div>
+            <mat-form-field>
+              <mat-label>Payments Per Year</mat-label>
+              <input matInput type="number" formControlName="paymentsPerYear" />
+              @if (form.controls['paymentsPerYear'].value) {
+                <button
+                  matSuffix
+                  mat-icon-button
+                  (click)="form.controls['paymentsPerYear'].setValue('')">
+                  <mat-icon>close</mat-icon>
+                </button>
+              }
+            </mat-form-field>
+          </div>
+  
+          <div>
+              <mat-form-field>
+                <mat-label>Loan Amount</mat-label>
+                <input matInput type="number" formControlName="loanAmount" />
+                @if (form.controls['loanAmount'].value) {
+                  <button
+                    matSuffix
+                    mat-icon-button
+                    (click)="form.controls['loanAmount'].setValue('')">
+                    <mat-icon>close</mat-icon>
+                  </button>
+                }
+              </mat-form-field>
+            </div>
+  
+            <div>
+              <mat-form-field>
+                <mat-label>Extra Payment</mat-label>
+                <input matInput type="number" formControlName="extraPayment" />
+                @if (form.controls['extraPayment'].value) {
+                  <button
+                    matSuffix
+                    mat-icon-button
+                    (click)="form.controls['extraPayment'].setValue('')">
+                    <mat-icon>close</mat-icon>
+                  </button>
+                }
+              </mat-form-field>
+            </div>
+        </form>
+      </div>
+    </mat-card-content>
+    <div style="padding: 5px">
+      <mat-divider></mat-divider>
+    </div>
+    <mat-card-actions>
+      <button mat-flat-button color="primary">SUBMIT</button>
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            Loan Summary
+        </mat-card-title>
+        <mat-card-subtitle>
+            This is based off of the loan information
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div class="display-info">
+            Scheduled Payment: <span style="float: right;">${{scheduledPayment}}</span>
+        </div>
+
+        <div class="display-info">
+            Scheduled No. Of Payments: <span style="float: right;">{{scheduledNumberOfPayments}}</span>
+        </div>
+
+        <div class="display-info">
+            Actual No. Of Payments: <span style="float: right;">{{actualNumberOfPayments}}</span>
+        </div>
+
+        <div class="display-info">
+            Total Extra Payments: <span style="float: right;">${{totalExtraPayments}}</span>
+        </div>
+
+        <div class="display-info">
+            Total Interest: <span style="float: right;">${{totalInterest}}</span>
+        </div>
+    </mat-card-content>
+</mat-card>

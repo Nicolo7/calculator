@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { LoanAmortizationComponent } from 'src/app/components/loan-amortization/loan-amortization.component';
+import { LoanAmortizationComponent } from 'src/app/components/loan-amortization-calculator/loan-amortization/loan-amortization.component';
 import { CommonModule } from '@angular/common';
 
 export enum Calculator {
